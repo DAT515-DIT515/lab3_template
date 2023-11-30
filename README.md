@@ -22,7 +22,7 @@ NOTICE: if you have already started working in Flask, in accordance with the ear
 The directories `static` and `templates` belong the the Flask version.
 The actual task, including bonus parts, is the same.
 But the instructions for Flask are less detailed, so we recommend the
-Django version in this document. 
+Django version in this document.
 
 ## Purpose
 
@@ -37,7 +37,7 @@ Your application will
 
 Here is an example screenshot:
 
-![shortest-path](../images/app-shortest.png)
+![shortest-path](app-shortest.png)
 
 In some more detail, here is how the three different screens should look:
 
@@ -128,8 +128,8 @@ lab3
     ├── urls.py ?
     ├── utils
     │   ├── __init__.py ??
-    │   ├── color_tram_svg.py !! 
-    │   ├── graphs.py ?? 
+    │   ├── color_tram_svg.py !!
+    │   ├── graphs.py ??
     │   ├── trams.py ??
     │   └── tramviz.py ??
     └── views.py !!
@@ -148,26 +148,26 @@ If not, the following steps must be taken at the first time:
 3. create a Python virtual environment (maybe not necessary, but the best practice):
    ```
    $ python3 -m venv myvenv
-   ``` 
+   ```
    or, depending on what command you use to run Python,
    ```
    $ python -m venv myvenv
    ```
    This will create the directory `myvenv` with lots of contents.
-4. activate the virtual environment: 
+4. activate the virtual environment:
    ```
    $ source myvenv/bin/activate
-   ``` 
-   on Linux/Mac 
+   ```
+   on Linux/Mac
    ```
    $ myvenv/Scripts/activate.bat
-   ``` 
+   ```
    on Windows.
    You should now see the string `(myvenv)` prefixed to your command line prompt.
 5. install the necessary Python libraries (`networkx` is only necessary if you did the baseline version of lab 2):
   ```
    $ pip install django
-   $ pip install networkx 
+   $ pip install networkx
    ```
   (notice that you can now use just `python` to run Python, because
   you are in a special environment).
@@ -205,7 +205,7 @@ This step is needed at the first time:
 ```
 python manage.py migrate
 ```
-It creates a database (in the file `db.sqlite3`), which is a standard part of any Django project, even if we don't need it very much at this lab. 
+It creates a database (in the file `db.sqlite3`), which is a standard part of any Django project, even if we don't need it very much at this lab.
 
 Now you can see a first version of your web site:
 ```
@@ -385,7 +385,7 @@ $ touch tram/utils/__init__.py
 Copy the following Python files from `lab3/files` into `tram/utils`:
 
 - `graphs.py`, a mock-up, for the most part to be replaced by your Lab 2 version
-- `trams.py`, a mock-up, for the most part to be replaced by your Lab 2 
+- `trams.py`, a mock-up, for the most part to be replaced by your Lab 2
 - `tramviz.py`, finding the shortest paths and marking them in SVG; for you TODO
 - `color_tram_svg.py`, actually making the colouring in SVG, no need for you to touch
 
